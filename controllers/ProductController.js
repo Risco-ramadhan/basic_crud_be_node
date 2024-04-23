@@ -83,7 +83,7 @@ export const updateProduct = async (req, res) => {
     });
   }
   const name = req.body.title;
-  const url = `${req.protocol}://${req.get("host")}/images/${fileName}`;
+  const url = `/images/${fileName}`;
 
   try {
     await Product.update(
