@@ -2,10 +2,10 @@ import express from "express";
 import FileUpload from "express-fileupload";
 import cors from "cors";
 import ProductRoute from "./routes/ProductRoute.js";
-import mantap from "./config/coba.js";
+import AccessImg from "./config/AccessImg.js";
 
 const app = express();
-app.use(mantap);
+app.use(AccessImg);
 app.use(cors());
 app.use(express.json());
 app.use(FileUpload());
